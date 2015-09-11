@@ -2,8 +2,8 @@
 
 
 ```
-# make virtual environment
-pip install -r requirements
+# make / activate virtual environment
+pip install -r requirements.txt
 ./manage.py runserver
 ```
 
