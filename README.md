@@ -7,7 +7,7 @@ pip install -r requirements
 ./manage.py runserver
 ```
 
-Go to http://localhost/
+Go to http://localhost/admin/
 username: test
 password: test
 
