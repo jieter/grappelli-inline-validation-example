@@ -15,6 +15,7 @@ class InvoiceItemInline(GrappelliSortableHiddenMixin, admin.TabularInline):
     fields = ('quantity', 'description', 'unit_price', 'tax_rate', 'position')
 
     sortable_field_name = 'position'
+    sortable_excludes = ('quantity', 'description', 'unit_price', 'tax_rate', )
 
     def get_extra (self, request, obj=None, **kwargs):
         """Dynamically sets the number of extra forms. 0 if the related object
